@@ -43,8 +43,11 @@ def random_game():
                     print("you got it right")
 
                     break
-                elif try1 != easy:
+                elif try1 < easy:
                     print("That was wrong!")
+                elif try1 >easy:
+                    print("That was wrong!")
+                
                 guesses_left -= 1
                 print('You now have ' + str(guesses_left) + ' guesses left!')
 
@@ -63,7 +66,9 @@ def random_game():
                     print("you got it right! ")
 
                     break
-                elif try1 != medium:
+                elif try1 < medium:
+                    print("that was wrong!")
+                elif try1 > medium:
                     print("that was wrong!")
 
 
@@ -87,7 +92,9 @@ def random_game():
                     print("you got it right!")
 
                     break
-                elif try1 != hard:
+                elif try1 < hard:
+                    print("that was wrong!")
+                elif try1 < hard:
                     print("that was wrong!")
 
                 guesses_left -= 1
